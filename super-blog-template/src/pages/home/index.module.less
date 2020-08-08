@@ -1,0 +1,296 @@
+.home-container {
+    position: relative;
+    background: url("../../assets/images/home-bg.jpg") no-repeat center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    .header {}
+
+    .main {
+        position: relative;
+
+        h2 {
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: '华文行楷';
+            text-align: center;
+            color: rgba(255, 255, 255, .7);
+        }
+
+        .user {
+            position: relative;
+            margin: 0 auto;
+            width: 120px;
+            height: 120px;
+            // background-color: aquamarine;
+
+        }
+
+        .outer-rotate {
+            position: absolute;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            color: #FFF;
+            text-shadow: 0 0 2px #000;
+            // background-color: rgba(255, 255, 255, .5);
+            transform-origin: center center;
+            animation: ratote-along 8s infinite linear;
+
+            span {
+                display: inline-block;
+                font-size: 12px;
+                font-weight: bold;
+
+
+                &:nth-child(1) {
+                    position: absolute;
+                    top: -2px;
+                    left: 50%;
+                    margin-left: -12px;
+                    text-align: center;
+                }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    left: -7px;
+                    top: 50%;
+                    margin-top: -9px;
+                    transform: rotate(-90deg);
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    right: -6px;
+                    top: 50%;
+                    margin-top: -9px;
+                    transform: rotate(90deg);
+                }
+
+                &:nth-child(4) {
+                    position: absolute;
+                    bottom: -2px;
+                    right: 50%;
+                    margin-right: -12px;
+                    text-align: center;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .inner-rotate {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -47px;
+            margin-top: -47px;
+            transform-origin: center center;
+            border-radius: 50%;
+            width: 77%;
+            height: 77%;
+            color: #FFF;
+            text-shadow: 0 0 5px #000;
+            // background-color: rgba(255, 255, 255, .5);
+            animation: ratote-inverse 8s infinite linear;
+
+            span {
+                display: inline-block;
+                font-size: 12px;
+                font-weight: bold;
+
+
+                &:nth-child(1) {
+                    position: absolute;
+                    top: -2px;
+                    left: 50%;
+                    margin-left: -12px;
+                    text-align: center;
+                }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    left: -6px;
+                    top: 50%;
+                    margin-top: -9px;
+                    transform: rotate(-90deg);
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    right: -6px;
+                    top: 50%;
+                    margin-top: -9px;
+                    transform: rotate(90deg);
+                }
+
+                &:nth-child(4) {
+                    position: absolute;
+                    bottom: -2px;
+                    right: 50%;
+                    margin-right: -12px;
+                    text-align: center;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .user-status {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 55%;
+            height: 55%;
+            cursor: pointer;
+            text-align: center;
+            line-height: 66px;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, .5);
+        }
+
+        .event-git {
+            display: inline-block;
+            position: relative;
+            top: 75px;
+            left: 50%;
+            margin-left: -102px;
+
+            .github {
+                margin-left: 20px;
+            }
+        }
+
+        .share {
+            position: absolute;
+            right: 150px;
+
+            display: inline-block;
+            // background-color: pink;
+        }
+
+        .me-wechat,
+        .alipay {
+            position: absolute;
+            right: 150px;
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .aside {
+            position: fixed;
+            right: 0;
+
+            .content {
+                overflow: hidden;
+                border-radius: 4px 0 0 4px;
+
+                p {
+                    margin: 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, .65);
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, .7);
+
+                    &:nth-child(2) {
+                        line-height: 25px;
+                    }
+
+                    &:nth-last-child(1) {
+                        border-bottom: 0;
+                    }
+
+                    &:hover {
+                        color: rgba(24, 144, 255, 1);
+                    }
+                }
+
+                .common {
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(255, 225, 225, .9);
+
+        .content {
+            box-sizing: border-box;
+            padding: 0 1%;
+
+            .download {
+                float: left;
+
+                h3 {
+                    color: rgba(0, 0, 0, .65);
+                }
+
+                .platform {
+
+                    a {
+
+                        display: inline-block;
+                        margin-top: -10px;
+                        margin-right: 20px;
+                        font-size: 28px;
+
+                        &:hover {}
+                    }
+                }
+
+            }
+
+            .description {
+                float: left;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                margin-left: -262px;
+            }
+
+            .friend-link {
+                float: right;
+
+                h3 {
+                    color: rgba(0, 0, 0, .65);
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes ratote-along {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ratote-inverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
