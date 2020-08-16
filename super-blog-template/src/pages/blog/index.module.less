@@ -1,0 +1,220 @@
+.blog-container {
+    width: 100%;
+    height: 100%;
+    // background-color: green;
+
+    .blog-content {
+        height: 100%;
+        background: url("../../assets/images/blog-bg-1.jpeg") no-repeat center center;
+        background-size: cover;
+
+        .blog-show {
+            float: left;
+            position: relative;
+            background-color: rgba(0, 0, 0, .5);
+            width: 25%;
+
+            .nav {
+                position: absolute;
+                box-sizing: border-box;
+                padding: 0 5px;
+                width: 100%;
+
+                span {
+                    font-size: 30px;
+                    color: rgba(255, 255, 255, 0.5);
+                    cursor: pointer;
+                }
+            }
+
+            .top {
+                margin-top: 115px;
+                width: 100%;
+                // height: 50px;
+                // background-color: orange;
+
+                .avator {
+                    position: relative;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    width: 88px;
+                    height: 88px;
+                    background-color: #FFF;
+
+                    .author {
+                        overflow: hidden;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        border-radius: 50%;
+                        width: 82px;
+                        height: 82px;
+                        transform: translate(-50%, -50%);
+                        // background-color: pink;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .self-name {
+                    margin-top: 8px;
+                    text-align: center;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 24px;
+                        color: #FFF;
+                    }
+                }
+
+                .self-mockery {
+                    text-align: center;
+
+                    h3 {
+                        margin: 0;
+                        font-size: 16px;
+                        color: rgba(255, 255, 255, .7);
+                    }
+                }
+
+                .divid {
+                    margin: 5px auto;
+                    width: 35%;
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, .3);
+                }
+
+                .motto {
+                    padding: 0 10px 0 25px;
+                    color: rgba(255, 255, 255, .8);
+                }
+            }
+
+            .bottom {
+                .tag {
+                    box-sizing: border-box;
+                    margin-top: 65px;
+                    padding: 5px 0 10px 8px;
+                    // padding-left: 8px;
+                    width: 100%;
+                    // height: 88px;
+                    // background-color: pink;
+                }
+
+                .chat {
+                    width: 100%;
+                    text-align: center;
+                    line-height: 80px;
+
+                    .icon {
+                        margin: 0 5px;
+                        font-size: 16px;
+                    }
+
+                    .icon-weibo {
+                        color: red;
+                    }
+
+                    .icon-github {
+                        color: #000;
+                    }
+
+                    .icon-wechat {
+                        color: green;
+                    }
+
+                    .icon-qq {
+                        color: cadetblue;
+                    }
+
+                    .icon-zhihu {
+                        color: blue;
+                    }
+                }
+            }
+        }
+
+        .blog-content {
+            float: left;
+            position: relative;
+            z-index: 10;
+            width: 75%;
+            background: rgba(255, 255, 255, .5);
+
+            .content {
+                overflow: auto;
+                box-sizing: border-box;
+                padding: 20px 70px 40px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, .5);
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        position: relative;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        .ctx {
+                            position: relative;
+                            box-sizing: border-box;
+                            margin-top: 20px;
+                            padding: 0 10px;
+                            border-radius: 8px;
+                            width: 100%;
+                            height: 150px;
+                            background-color: rgba(255, 255, 255, .8);
+
+                            .title {
+                                font-size: 22px;
+                                // font-weight: bold;
+                            }
+
+                            .article {
+                                overflow: hidden;
+                                display: block;
+                                display: -webkit-box;
+                                max-width: 100%;
+                                height: 66px;
+                                margin: 0 auto;
+                                margin-bottom: 5px;
+                                font-size: 16px;
+                                line-height: 1.4;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            .show-bar {
+
+                                span {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        .divid {
+                            position: absolute;
+                            bottom: -10px;
+                            width: 35%;
+                            height: 1px;
+                            background-color: rgba(255, 255, 255, .8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .blog-inner {
+            height: 100%;
+        }
+    }
+}

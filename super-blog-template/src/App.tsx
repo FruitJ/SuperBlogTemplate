@@ -21,7 +21,7 @@ function App() {
           <Switch>
             {/* 首页 */}
             <Route exact path="/" component={ Home } />
-            <Redirect exact from="/home" to="/" component={ Home } />
+            <Redirect exact from="/home" to="/" />
             {/* 博客页 */}
             <Route exact path="/blog" component={ Blog } />
             {/* 音乐页 */}

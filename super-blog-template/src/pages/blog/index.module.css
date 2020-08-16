@@ -1,0 +1,174 @@
+.blog-container {
+  width: 100%;
+  height: 100%;
+}
+.blog-container .blog-content {
+  height: 100%;
+  background: url("../../assets/images/blog-bg-1.jpeg") no-repeat center center;
+  background-size: cover;
+}
+.blog-container .blog-content .blog-show {
+  float: left;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 25%;
+}
+.blog-container .blog-content .blog-show .nav {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0 5px;
+  width: 100%;
+}
+.blog-container .blog-content .blog-show .nav span {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.blog-container .blog-content .blog-show .top {
+  margin-top: 115px;
+  width: 100%;
+}
+.blog-container .blog-content .blog-show .top .avator {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  background-color: #FFF;
+}
+.blog-container .blog-content .blog-show .top .avator .author {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  transform: translate(-50%, -50%);
+}
+.blog-container .blog-content .blog-show .top .avator .author img {
+  width: 100%;
+  height: 100%;
+}
+.blog-container .blog-content .blog-show .top .self-name {
+  margin-top: 8px;
+  text-align: center;
+}
+.blog-container .blog-content .blog-show .top .self-name h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #FFF;
+}
+.blog-container .blog-content .blog-show .top .self-mockery {
+  text-align: center;
+}
+.blog-container .blog-content .blog-show .top .self-mockery h3 {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.blog-container .blog-content .blog-show .top .divid {
+  margin: 5px auto;
+  width: 35%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.blog-container .blog-content .blog-show .top .motto {
+  padding: 0 10px 0 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.blog-container .blog-content .blog-show .bottom .tag {
+  box-sizing: border-box;
+  margin-top: 65px;
+  padding: 5px 0 10px 8px;
+  width: 100%;
+}
+.blog-container .blog-content .blog-show .bottom .chat {
+  width: 100%;
+  text-align: center;
+  line-height: 80px;
+}
+.blog-container .blog-content .blog-show .bottom .chat .icon {
+  margin: 0 5px;
+  font-size: 16px;
+}
+.blog-container .blog-content .blog-show .bottom .chat .icon-weibo {
+  color: red;
+}
+.blog-container .blog-content .blog-show .bottom .chat .icon-github {
+  color: #000;
+}
+.blog-container .blog-content .blog-show .bottom .chat .icon-wechat {
+  color: green;
+}
+.blog-container .blog-content .blog-show .bottom .chat .icon-qq {
+  color: cadetblue;
+}
+.blog-container .blog-content .blog-show .bottom .chat .icon-zhihu {
+  color: blue;
+}
+.blog-container .blog-content .blog-content {
+  float: left;
+  position: relative;
+  z-index: 10;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.blog-container .blog-content .blog-content .content {
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 20px 70px 40px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.blog-container .blog-content .blog-content .content ul {
+  margin: 0;
+  padding: 0;
+}
+.blog-container .blog-content .blog-content .content ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.blog-container .blog-content .blog-content .content ul li .ctx {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 0 10px;
+  border-radius: 8px;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.blog-container .blog-content .blog-content .content ul li .ctx .title {
+  font-size: 22px;
+}
+.blog-container .blog-content .blog-content .content ul li .ctx .article {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 66px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog-container .blog-content .blog-content .content ul li .ctx .show-bar span {
+  margin-right: 10px;
+}
+.blog-container .blog-content .blog-content .content ul li .divid {
+  position: absolute;
+  bottom: -10px;
+  width: 35%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.blog-container .blog-content .blog-inner {
+  height: 100%;
+}

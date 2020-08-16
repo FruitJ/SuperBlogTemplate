@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter,RouteComponentProps, } from 'react-router-dom';
+import * as H from 'history';
 import { Menu, Button, } from 'antd';
 import { HomeOutlined, GoldOutlined, FileTextOutlined, CustomerServiceOutlined, AndroidOutlined, AppleOutlined, WindowsOutlined, GithubOutlined, SnippetsOutlined, } from '@ant-design/icons';
 
@@ -8,8 +9,8 @@ import './index.css';
 import alipayImage from '../../assets/images/alipay.png';
 import we_chatImage from '../../assets/images/me_wechat.jpg';
 
-export interface IHomeProps {
-
+export interface IHomeProps extends RouteComponentProps {
+    history: H.History,
 }
 
 export interface IHomeState {
@@ -19,7 +20,14 @@ export interface IHomeState {
     isRewardShow: boolean,
 }
 
-class Home extends Component<IHomeProps, IHomeState> {
+const keyPath: Array<string> = [
+    "home",
+    "blog",
+    "music",
+    "importantEvent",
+];
+
+class _Home extends Component<IHomeProps, IHomeState> {
     constructor(props: IHomeProps) {
         super(props);
         this.state = {
@@ -33,6 +41,9 @@ class Home extends Component<IHomeProps, IHomeState> {
     handleClick = (e: any): void => {
         console.log('click ', e);
         this.setState({ current: e.key });
+        if (keyPath.includes(e.keyPath[0])) { // 跳转界面
+            this.props.history.push(`/${e.keyPath[0]}`);
+        }
     };
 
     // 点击分享的回调函数
@@ -170,6 +181,13 @@ class Home extends Component<IHomeProps, IHomeState> {
             </div>
         );
     }
+
+    componentDidMount() {
+        console.log(this.props);
+
+    }
 }
+
+const Home = withRouter(_Home);
 
 export default Home;
